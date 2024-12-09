@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:record/record.dart';
 import 'audio_recorder_page.dart';
 
+export 'audio_player_widget.dart';
 export 'package:record/record.dart'
     show
         RecordConfig,

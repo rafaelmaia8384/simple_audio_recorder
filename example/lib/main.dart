@@ -53,9 +53,9 @@ class _HomeScreenState extends State<HomeScreen> {
               const SizedBox(
                 height: 24,
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text('Result: $_audioPath'),
+              AudioPlayerWidget(
+                key: UniqueKey(),
+                audioPath: _audioPath!,
               ),
             ],
           ],
