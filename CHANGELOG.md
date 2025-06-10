@@ -6,3 +6,7 @@
 ## 0.1.0
 
 - Added AudioPlayerWidget.
+
+## 0.2.0
+
+- Added readingTextWidget
