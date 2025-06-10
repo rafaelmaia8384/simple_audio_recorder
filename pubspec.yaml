@@ -1,6 +1,6 @@
 name: simple_audio_recorder
 description: "Simple layout for audio recording"
-version: 0.1.0
+version: 0.1.1
 homepage: https://github.com/rafaelmaia8384/simple_audio_recorder
 
 environment:
