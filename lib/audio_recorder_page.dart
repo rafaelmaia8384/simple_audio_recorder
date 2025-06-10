@@ -16,10 +16,12 @@ class AudioRecorderPage extends StatefulWidget {
     this.recordConfig,
     this.startRecordingWidget,
     this.stopRecordingWidget,
+    this.readingTextWidget,
   });
   final recorder.RecordConfig? recordConfig;
   final Widget? startRecordingWidget;
   final Widget? stopRecordingWidget;
+  final Widget? readingTextWidget;
 
   @override
   AudioRecorderPageState createState() => AudioRecorderPageState();
@@ -147,19 +149,9 @@ class AudioRecorderPageState extends State<AudioRecorderPage> {
               children: [
                 Expanded(
                   flex: 2,
-                  child: _isRecording && _waveformAmplitudeStream != null
-                      ? Center(
-                          child: SizedBox(
-                            width: double.maxFinite,
-                            height: 100,
-                            child: AnimatedWaveList(
-                              stream: _waveformAmplitudeStream!,
-                              barColor: Colors.red,
-                              maxHeight: 4,
-                            ),
-                          ),
-                        )
-                      : const SizedBox.shrink(),
+                  child: Center(
+                    child: widget.readingTextWidget ?? Container(),
+                  ),
                 ),
                 Expanded(
                   flex: 1,
@@ -202,6 +194,22 @@ class AudioRecorderPageState extends State<AudioRecorderPage> {
                                 ),
                               ),
                         ),
+                ),
+                Expanded(
+                  flex: 1,
+                  child: _isRecording && _waveformAmplitudeStream != null
+                      ? Center(
+                          child: SizedBox(
+                            width: double.maxFinite,
+                            height: 100,
+                            child: AnimatedWaveList(
+                              stream: _waveformAmplitudeStream!,
+                              barColor: Colors.red,
+                              maxHeight: 4,
+                            ),
+                          ),
+                        )
+                      : const SizedBox.shrink(),
                 ),
                 Expanded(
                   flex: 2,

@@ -19,6 +19,7 @@ class SimpleAudioRecorder {
     Widget? stopRecordingWidget,
     Widget? labelStartWidget,
     Widget? labelStopWidget,
+    Widget? readingTextWidget,
   }) async {
     return await Navigator.push(
       context,
@@ -28,6 +29,7 @@ class SimpleAudioRecorder {
           recordConfig: recordConfig,
           startRecordingWidget: startRecordingWidget,
           stopRecordingWidget: stopRecordingWidget,
+          readingTextWidget: readingTextWidget,
         ),
         transitionsBuilder: (context, animation, secondaryAnimation, child) {
           return FadeTransition(
