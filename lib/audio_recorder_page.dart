@@ -148,7 +148,7 @@ class AudioRecorderPageState extends State<AudioRecorderPage> {
             Column(
               children: [
                 Expanded(
-                  flex: 2,
+                  flex: 3,
                   child: Center(
                     child: widget.readingTextWidget ?? Container(),
                   ),
@@ -212,7 +212,7 @@ class AudioRecorderPageState extends State<AudioRecorderPage> {
                       : const SizedBox.shrink(),
                 ),
                 Expanded(
-                  flex: 2,
+                  flex: 1,
                   child: Padding(
                     padding: const EdgeInsets.only(bottom: 48),
                     child: Center(
