@@ -10,3 +10,7 @@
 ## 0.2.0
 
 - Added readingTextWidget
+
+## 0.2.1
+
+- Modified flex dispositions
