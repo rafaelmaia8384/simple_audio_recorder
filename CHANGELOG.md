@@ -14,3 +14,7 @@
 ## 0.2.1
 
 - Modified flex dispositions
+
+## 0.2.2
+
+- Record package upgraded

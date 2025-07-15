@@ -59,8 +59,6 @@ class AudioRecorderPageState extends State<AudioRecorderPage> {
           return 'wav';
         case recorder.AudioEncoder.pcm16bits:
           return 'pcm';
-        default:
-          return 'audio';
       }
     }
 
