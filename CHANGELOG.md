@@ -18,3 +18,7 @@
 ## 0.2.2
 
 - Record package upgraded
+
+## 0.2.3
+
+- Bug fix
